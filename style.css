@@ -1,0 +1,303 @@
+body{
+  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#ffffff;
+}
+
+/* Global */
+.container{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+}
+
+ul{
+  margin:0;
+  padding:0;
+}
+
+.button_1{
+  height:38px;
+  background:#febb1b;
+  border:0;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#ffffff;
+}
+
+.dark{
+  padding:15px;
+  background:#35424a;
+  color:#ffffff;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+/* Top **/
+header{
+  background:#35424a;
+  color:#ffffff;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom:#febb1b 3px solid;
+}
+
+header a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding{
+  float:left;
+}
+
+header #branding h1{
+  margin:0;
+}
+
+header nav{
+  float:right;
+  margin-top:10px;
+}
+
+header .highlight, header .current a{
+  color:#febb1b;
+  font-weight:bold;
+}
+
+header a:hover{
+  color:#cccccc;
+  font-weight:bold;
+}
+
+/* Content */
+
+
+#showcase {
+  min-height:700px;
+  background-image:url("1.jpeg");
+  background-size: 100%;
+  background-repeat:no-repeat;
+  background-position:center;
+  text-align:center;
+  background-color:#febb1b;
+  animation: animate 16s ease-in-out infinite;
+
+ 
+}
+ 
+ 
+
+/*
+@keyframes animate{
+
+0%,100%{
+background-image:URL("2.jpeg");
+}
+25%{
+ background-image:URL("1.jpeg");
+}
+*/
+
+
+#showcase h1{
+  margin-top:100px;
+  font-size:55px;
+  margin-bottom:10px;
+}
+
+#showcase p{
+  font-size:20px;
+}
+
+/* Newsletter */
+#newsletter{
+  padding:15px;
+  color:#ffffff;
+  background:#35424a;
+}
+
+#newsletter h1{
+  float:left;
+}
+
+#newsletter form {
+  float:right;
+  margin-top:15px;
+}
+
+#newsletter input[type="tel"]{
+  padding:4px;
+  height:25px;
+  width:250px;
+}
+
+
+#boxes{
+  margin-top:20px;
+}
+
+#boxes .box{
+  float:left;
+  text-align: center;
+  width:30%;
+  padding:10px;
+}
+
+#boxes .box img{
+  width:200px;
+}
+
+/* Side */
+aside#sidebar{
+  float:right;
+  width:30%;
+  margin-top:10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+  width:90%;
+  padding:5px;
+}
+
+footer{
+  padding:20px;
+  margin-top:20px;
+  color:#ffffff;
+  background-color:#febb1b;
+  text-align: center;
+}
+
+
+
+.right-section {
+  width:8000px;
+ background-color:white;
+ border-radius:15px;
+ padding:40px 0;
+ box-shadow:0 5px 6px rgba(0,0,0,0.26);
+}
+
+.right-section h4 {
+ font-size:20px;
+ width:300px;
+ margin:auto;
+ margin-bottom: 6px;
+
+
+}
+
+
+
+.input-group {
+ width:300px;
+ margin:30px auto;
+ display: flex;
+ flex-direction:column;
+ position:relative;
+}
+.input-group span{
+
+  top:5px;
+}
+.input-group label{
+
+ color:rgb(165,165,165);
+ font-size:14px;
+ position: absolute;
+ top:5px;
+ transition:0.5s ease-in-out;
+}
+.input-group input{
+
+
+ border:none;
+ padding:7px;
+ margin-top:15px;
+ outline:none;
+ color:#2098ca;
+ border-bottom:1px solid #c9c9c98a;
+}
+
+.input-group input:focus ~ label,
+.input-group input:valid ~ label {
+
+ color:#2098ca;
+ top:-10px;
+ font-size:12px;
+}
+.input-group input:focus,
+.input-group input:valid  {
+ border-color:#2098ca;
+}
+.submit-section {
+text-align:center;
+}
+
+{
+ display: flex;
+}
+.submit-button {
+
+ background-color:#00ff00;
+ color:white;
+ border: none;
+ padding:10px 0;
+ border-radius:10px;
+ margin-top:15px;
+ width:300px;
+ cursor:pointer;
+}
+
+.submit-button:hover {
+ box-shadow:0 3px 6px silver;
+}
+/* mobile responsive*/
+@media(max-width: 768px){
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+
+  header{
+    padding-bottom:20px;
+  }
+  #showcase{
+
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+
+  }
+  #showcase h1{
+    margin-top:40px;
+
+  }
+
+  #newsletter button, .quote button{
+    display:block;
+    width:100%;
+
+  }
+
+  #newsletter form input[type="tel"], .quote input, .quote textarea{
+    width:100%;
+    margin-bottom:5px;
+  }
+}

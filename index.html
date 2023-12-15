@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome to OCTANE TAXI BOOKING</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+<script type="text/javascript">
+ function passvalue()
+ {
+
+ var phnumber=document.getElementById("phonenumber").value;
+ localStorage.setItem("telvalue",phnumber);
+ return false;
+ }
+
+
+ </script>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">OCTANE</span> TAXI BOOKING</h1>
+        </div>
+        <nav>
+          <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="manage.php">MANAGE BOOKING</a></li>
+            <li><a href="mailto:ashikjoju8055@gmail.com" >Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="showcase">
+   
+    </section>
+
+    <section id="newsletter">
+      <div class="container">
+        <h1>BOOK YOUR TAXI NOW</h1>
+        <form action="book.php"  >
+          <input type="tel" placeholder="Enter Mobile Number" id="phonenumber" name="phoneNo" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+          <button value="click" type="submit"  onclick="passvalue()"  class="button_1">BOOK NOW</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="boxes">
+      <div class="container">
+        <div class="box">
+          <img src="a.jpg">
+          <h3>PRIVATE HIRE TAXI</h3>
+        <p> This kind of taxi services can only be availed for hire with a driver on the pre-booking basis. </p><p>The booking can be made via telephone, fax or the internet but it should be made with the company providing cab services rather than contacting directly with the cab driver.</p><p> The drivers do not need to undergo an extensive training course to obtain the license to operate this taxi services as in the case of black cabs.</p>
+        </div>
+        <div class="box">
+          <img src="b.jpg">
+          <h3>LUXURY CAR TAXI</h3>
+         <p> In many countries, luxury cars are used for commuting passengers to give them an easy, relaxing, and convenient ride. </p><p>Limousines, Lamborghini, Mercedes and other luxury cards are used as taxis to give the passengers a superior ride experience. </p><p>This taxi service can only be availed on pre booking basis.</p>
+        </div>
+        <div class="box">
+          <img src="c.jpg">
+          <h3>TAXI BUS</h3>
+          <p>It is a type of taxi service that falls between the taxicabs and buses. </p><p>These vehicles are usually smaller than the buses. </p><p>A fixed or semi-fixed route is followed for transporting the passengers. </p><p>Also known as Shared taxi, a taxicab does not depart until all the seats are filled.</p><p> A taxibus may stop anywhere to drop off or pick up their customers.</p><p> They are cheaper as compared to other services.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Octane Web Deisgn, Copyright &copy; 2020</p>
+    </footer>
+  
+
+ 
+
+
+
+
+</body>
+
+</html>
